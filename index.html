@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Carrossel</title>
+</head>
+<body>
+    <div class="container">
+        <a class="prev" href="#" onclick="addSlides(-1)">
+            <span>&#10094;</span>
+            <span class="prev-test">Voltar</span>
+        </a>
+        <div>
+            <div class="slides fade">
+                <img src="./Assets/elon.png" >
+                <h2 class="title"> Elon Musk </h2>
+                <p class="content">
+                    Elon Musk é um empresário e inventor 
+                    nascido na África do Sul em 28 de junho de 1971. 
+                    Fundador e CEO das empresas, Tesla, SpaceX, 
+                    Neuralink e a The Boring Company.
+                </p>
+            </div>
+            <div class="slides fade">
+                <img src="./Assets/jeff.png" >
+                <h2 class="title"> Jeff Bezos </h2>
+                <p class="content">
+                    Jeff Bezos é o fundador da Amazon, 
+                    uma das maiores empresas de comércio 
+                    eletrônico do mundo, criada em 1994.
+                </p>
+            </div>
+            <div class="slides fade">
+                <img src="./Assets/mark.png" >
+                <h2 class="title"> Mark Zuckerberg </h2>
+                <p class="content">
+                    Mark Zuckerberg é o cofundador e CEO do Meta Platforms, 
+                    a empresa mãe de Facebook, Instagram, 
+                    WhatsApp e outras plataformas digitais.
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="button" onclick="addSlides(1)">Próximo</button>
+            <div class="dot-box">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+    <script src="./script/handle.js"></script>
+</body>
+</html>
